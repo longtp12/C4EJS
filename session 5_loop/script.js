@@ -77,9 +77,8 @@
 // for (let i = 2; i <= M; i++) {
 //    S = S + giaiThua;
 //    giaiThua = giaiThua *i;
-    
-// }
 
+// }
 
 // let n = Number(prompt("Nhap N"));
 // while(n<8){
@@ -87,13 +86,11 @@
 // }
 // console.log(n);
 
-
 // let password = prompt("Nhap password");
 // while(password.length < 8){
 //     password = prompt('Pass qua ngan');
 
 // }console.log(password);
-
 
 // Nhập số chẵn >10 nhập sai nhập lại
 
@@ -103,8 +100,56 @@
 
 // }console.log(a);
 
-let pass = prompt("nhap mk");
-while(!(pass.length >= 8 && pass.search("@") >=0)){
-    pass = prompt("nhap lai mk");
-}
-console.log(pass);
+// let pass = prompt("nhap mk");
+// while(!(pass.length >= 8 && pass.search("@") >=0)){
+//     pass = prompt("nhap lai mk");
+// }
+// console.log(pass);
+
+// let n = parseInt(prompt("stt fibonacci"));
+// let f1 = 1, f2 = i;
+// let count = 2;
+// for (let i = 1; i < n/2; i++){
+// f1 = f1 + f2;
+// count++;
+// f2 = f2 + f1;
+// count++;
+
+// }
+
+// let a = 10;
+// let b = 20;
+// let s = "";
+// for (let i = 0; i < b; i++) {
+//   s += "*";
+// }
+// let result = ``;
+// for (let i = 0; i < a; i++) {
+//   result += s + `\n`;
+// }
+// console.log(result);
+
+// let n = parseInt(prompt("Nhap so (ktra hop so - so nguyen to)"));
+// let soLuonguocso = 0;
+// for (let i = 1; i <= n; i++) {
+//   if (n % i === 0) {
+//     console.log(i);
+//     soLuonguocso++;
+//     if (soLuonguocso > 2) {
+//       break;
+//     }
+//   }
+// }
+// if (soLuonguocso > 2) {
+//   console.log("hop so");
+// } else {
+//   console.log("so nguyen to");
+// }
+
+// let n = 10;
+// for (let i = 0; i <= n; i++) {
+//   if (i % 2 !== 0) {
+//     continue;
+//   }
+//   console.log(i);
+// }
