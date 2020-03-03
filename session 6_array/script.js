@@ -55,11 +55,11 @@
 // console.log(`Tong trung binh: ${S / arr.length}`);
 
 // let isExist = false;
-// let N = Number(prompt("Nhap 1 so"));
+// let N = prompt("Nhap 1 so");
 
 // for (let i = 0; i < arr.length; i++) {
 //     const element = arr[i];
-//     if(element === N){
+//     if(element.toLowerCase === N.toLowerCase){
 //         isExist = true;
 //         break;
 //     }
@@ -71,15 +71,42 @@
 //   console.log("khong ton tai");
 // }
 
+// let arr = [];
+// let length = parseInt(prompt("nhap so sinh vien"));
+
+// for (let i = 0; i < length; i++) {
+//     let name = prompt("Nhap ten sinh vien");
+//     console.log(`${i + 1}: ${arr[i]}`);
+
+// }
+
+// arr.sort(); // tăng dần
+// arr.reverse(); // đảo ngược thứ tự => giảm dần
+
+// let arr = [6, 7, 3, 2, 9];
+
+// for (let i = 0; i < arr.length - 1; i++) {
+//   for (let j = i + 1; j < arr.length; j++) {
+//     if (arr[i] > arr[j]) {
+//       //đổi chỗ
+//       let temp = arr[i];
+//       arr[i] = arr[j];
+//       arr[j] = temp;
+//     }
+//   }
+// }
+// console.log(arr);
 
 
 
+// let arr = ["Nam", "Long", "Linh"];
 
-let arr = [];
-let length = parseInt(prompt("nhap so sinh vien"));
+// let N = prompt("nhập 1 tên");
+// for (let i = 0; i < arr.length; i++) {
+//     const element = arr[i];
+//     if(element.toLowerCase === N.toLowerCase){
+//         console.log(N);
+        
+//     }
 
-for (let i = 0; i < length; i++) {
-    let name = prompt("Nhap ten sinh vien");
-    console.log(`${i + 1}: ${arr[i]}`);
-    
-}
+//     }
