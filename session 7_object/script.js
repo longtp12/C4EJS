@@ -97,25 +97,65 @@ for (let i = 0; i < listPhone.length; i++) {
   }
 }
 
-let newPhoneModel = prompt("Tên đth mới");
-let newPhoneBrand = prompt("Hãng đth mới");
-let newPhonePrice = prompt("Giá đth mới");
+// let newPhoneModel = prompt("Tên đth mới");
+// let newPhoneBrand = prompt("Hãng đth mới");
+// let newPhonePrice = prompt("Giá đth mới");
 
-let newPhone = {
-    Model: newPhoneModel,
-    Brand: newPhoneBrand,
-    Price: newPhonePrice,
-};
-listPhone.push(newPhone);
+// let newPhone = {
+//     Model: newPhoneModel,
+//     Brand: newPhoneBrand,
+//     Price: newPhonePrice,
+// };
+// listPhone.push(newPhone);
 
-console.log("=============Thêm thành công=============");
+// console.log("=============Thêm thành công=============");
 
-for (let i = 0; i < listPhone.length; i++) {
-    const phone = listPhone[i];
-    console.log(`${i + 1}: `);
-    for (const key in phone) {
-      const value = phone[key];
-      console.log(key +': '+ value);
+// for (let i = 0; i < listPhone.length; i++) {
+//     const phone = listPhone[i];
+//     console.log(`${i + 1}: `);
+//     for (const key in phone) {
+//       const val  ue = phone[key];
+//       console.log(key +': '+ value);
       
-    }
-  }
+//     }
+//   }
+
+
+// let N = parseInt(prompt("Nhập stt điện thoại muốn sửa"));
+// let changeKey = prompt("Nhập key muốn sửa");
+// while (!listPhone[N-1].hasOwnProperty(changeKey)) {
+//   changeKey = prompt("Nhập key muốn sửa");
+// }
+// // changeKey = prompt("Nhập thông tin muốn sửa");
+// listPhone[N-1][changeKey] = prompt("Nhập thông tin muốn sửa");
+// console.log("=========Sửa thành công===========");
+
+// for (let i = 0; i < listPhone.length; i++) {
+//   const phone = listPhone[i];
+//   console.log(`${i + 1}: `);
+//   for (const key in phone) {
+//     const value = phone[key];
+//     console.log(key +': '+ value);
+    
+//   }
+// }
+
+// console.log("=======Xóa thành công========");
+
+// let N = parseInt(prompt("Nhập stt điện thoại muốn xóa"));
+// listPhone.splice(N-1,1);
+
+
+// for (let i = 0; i < listPhone.length; i++) {
+//   const phone = listPhone[i];
+//   console.log(`${i + 1}: `);
+//   for (const key in phone) {
+//     const value = phone[key];
+//     console.log(key +': '+ value);
+    
+//   }
+// }
+
+
+
+
