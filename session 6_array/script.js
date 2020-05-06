@@ -83,19 +83,19 @@
 // arr.sort(); // tăng dần
 // arr.reverse(); // đảo ngược thứ tự => giảm dần
 
-// let arr = [6, 7, 3, 2, 9];
+let arr = [6, 7, 3, 2, 9];
 
-// for (let i = 0; i < arr.length - 1; i++) {
-//   for (let j = i + 1; j < arr.length; j++) {
-//     if (arr[i] > arr[j]) {
-//       //đổi chỗ
-//       let temp = arr[i];
-//       arr[i] = arr[j];
-//       arr[j] = temp;
-//     }
-//   }
-// }
-// console.log(arr);
+for (let i = 0; i < arr.length - 1; i++) {
+  for (let j = i + 1; j < arr.length; j++) {
+    if (arr[i] > arr[j]) {
+      //đổi chỗ
+      let temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+    }
+  }
+}
+console.log(arr);
 
 
 
@@ -110,3 +110,4 @@
 //     }
 
 //     }
+    
