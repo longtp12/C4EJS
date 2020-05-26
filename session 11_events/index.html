@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1 onclick="alert('Hello world')">HTML Events</h1>
+
+    <p id="p1" onclick="document.getElementById('p1').style.color = 'red'">đây là thẻ p</p>
+    
+    <div id="d1" onclick="document.getElementById('d1').innerHTML = 'đây vẫn là thẻ div'">đây là thẻ div</div>
+
+    <div onclick="welcome();changeColor(event)">hehehe</div>
+
+    <button onclick="welcome()" oncontextmenu="alert('ngu')">click here</button>
+
+    <div onclick="changeColor(event)">Change Color 1 </div>
+
+    <button onclick="hiddenButton(event)">button 1</button>
+    <button onclick="hiddenButton(event)">button 2</button>
+    <button onclick="hiddenButton(event)">button 3</button>
+    <button onclick="hiddenButton(event)">button 4</button>
+    <button onclick="hiddenButton(event)">button 5</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("images/bg-pattern.jpg");
+}
+
+.container {
+  /* border: 1px solid black; */
+  width: 70%;
+  height: 1000px;
+  margin: auto;
+  padding: 10px 8px;
+}
+
+.header-menu ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0px;
+}
+
+.header-menu ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.header-menu ul li a {
+  border: 1px solid #64b4a9;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #3d8e84;
+  display: block;
+  
+}
+
+.header-menu ul li:not(.active) a:hover{
+    background-color: #e0e0b4;
+    color: #ad8757;
+    /* transform: translateZ(10rem); */
+    /* width: 1000px; */
+}
+
+
+.header-menu ul li.active a{
+    background-color: #8a7d74;
+    cursor: default;
+}
+
+.header-banner img{
+    border: 6px solid white;
+}
+
+.content-body h2{
+    color: #316e66;
+}
+
+.content-body p{
+    line-height: 30px;
+}
+
+.content-detail{
+    display: flex;
+}
+
+.content-detail-left{
+    flex: 3;
+}
+
+.content-detail-right{
+    flex: 1;
+}

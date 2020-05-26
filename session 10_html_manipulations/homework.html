@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Homework</h1>
+
+    <div>
+        <input onkeyup="filterPress(event)" id="filter-brand" type="text" >
+        <button onclick="filter()">Filter</button>
+
+    </div>
+
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Tên</th>
+                <th>Hãng</th>
+                <th>Giá</th>
+                <th>Ảnh</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody id="phones" >
+          
+        </tbody>
+    </table>
+
+<script src="homework.js"></script>
+</body>
+</html>
