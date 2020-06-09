@@ -11,6 +11,7 @@ II. Khi click vào đường link, mở ra tab mới đến trang chi tiết đt
 
 let listPhones = [
   {
+    id: 1,
     name: "iPhone 8 Plus 64GB",
     brand: "Apple",
     price: 15e6,
@@ -19,6 +20,7 @@ let listPhones = [
     detail: "https://www.thegioididong.com/dtdd/iphone-8-plus",
   },
   {
+    id: 2,
     name: "Samsung Galaxy A71",
     brand: "Samsung",
     price: 10e6,
@@ -27,6 +29,7 @@ let listPhones = [
     detail: "https://www.thegioididong.com/dtdd/samsung-galaxy-a71",
   },
   {
+    id: 3,
     name: "Xiaomi Redmi Note 8",
     brand: "Xiaomi",
     price: 479e4,
@@ -35,6 +38,7 @@ let listPhones = [
     detail: "thegioididong.com/dtdd/xiaomi-redmi-note-8-128gb",
   },
   {
+    id: 4,
     name: "Samsung Galaxy Fold",
     brand: "Samsung",
     price: 50e6,
@@ -43,6 +47,7 @@ let listPhones = [
     detail: "thegioididong.com/dtdd/samsung-galaxy-fold",
   },
   {
+    id: 5,
     name: "iPhone Xs Max 256GB",
     brand: "Apple",
     price: 30490e3,
@@ -61,7 +66,7 @@ function display() {
                     <td>${listPhones[i].brand}</td>
                     <td>${listPhones[i].price}</td>
                     <td><img src="${listPhones[i].img}" width='100'></td>
-                    <td><a href='${listPhones[i].detail}' target='_blank'>Detail</a></td>
+                    <td><button onclick="showDetail(${listPhones[i].id})">Detail</button></td>
                 </tr>
                 `;
     phoneTable.innerHTML += html;
@@ -74,7 +79,7 @@ function filter() {
   phoneTable.innerHTML = "";
   let filterBrand = document.getElementById("filter-brand").value;
   let phoneBrand = listPhones.filter(function (phone) {
-    return phone.brand === filterBrand;
+    return phone.brand.toLowerCase().includes(filterBrand.toLowerCase());
   });
   // console.log(phoneBrand);
   
@@ -88,7 +93,7 @@ function filter() {
                     <td>${phoneBrand[i].brand}</td>
                     <td>${phoneBrand[i].price}</td>
                     <td><img src="${phoneBrand[i].img}" width='100'></td>
-                    <td><a href='${phoneBrand[i].detail}' target='_blank'>Detail</a></td>
+                    <td><button onclick="showDetail(${listPhones[i].id})">Detail</button></td>
                 </tr>
                 `;
       phoneTable.innerHTML += html;
@@ -104,5 +109,13 @@ function filterPress(e) {
 
 
 
-localStorage.setItem('phone',JSON.stringify(listPhones));
+// localStorage.setItem('phone',JSON.stringify(listPhones));
   
+function showDetail(id){
+  
+  // 1: save productID selected
+  localStorage.setItem('selectedProductId', id);
+  localStorage.setItem('products', JSON.stringify(listPhones));
+  // 2: redirect
+  window.location.href = 'detail.html'
+}
